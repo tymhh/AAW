@@ -3,21 +3,107 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31A0F052D12D118005C0045 /* ByTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A0F042D12D103005C0045 /* ByTypeView.swift */; };
+		A31A0F072D12D2C2005C0045 /* ByTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A0F062D12D2BA005C0045 /* ByTypeViewModel.swift */; };
+		A31A0F0A2D12F841005C0045 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = A31A0F092D12F841005C0045 /* OrderedCollections */; };
+		A31A0F0E2D1442C2005C0045 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A0F0D2D1442C2005C0045 /* StoryView.swift */; };
+		A31A0F122D145173005C0045 /* StoryContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A0F112D145173005C0045 /* StoryContentView.swift */; };
+		A32BBC902D20B55000B73DE0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32BBC8F2D20B55000B73DE0 /* WidgetKit.framework */; };
+		A32BBC922D20B55000B73DE0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32BBC912D20B55000B73DE0 /* SwiftUI.framework */; };
+		A32BBCA02D20B55100B73DE0 /* AAWStreakWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A32BBC8E2D20B55000B73DE0 /* AAWStreakWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A32BBCA82D20C36A00B73DE0 /* HealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36BE4852CFE36D10001BE46 /* HealthService.swift */; };
+		A32BBCAA2D21690900B73DE0 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32BBCA92D21690200B73DE0 /* StorageService.swift */; };
+		A32BBCAB2D21690900B73DE0 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32BBCA92D21690200B73DE0 /* StorageService.swift */; };
+		A32BBCAC2D216AD400B73DE0 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32BBCA92D21690200B73DE0 /* StorageService.swift */; };
+		A33083132D0F02BA0082BFD4 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33083122D0F02BA0082BFD4 /* CircularProgressBar.swift */; };
+		A3422C1A2D1FF8E800E8F693 /* ElapsedTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3422C0D2D1FF8E800E8F693 /* ElapsedTimeView.swift */; };
+		A3422C2B2D20007600E8F693 /* SessionService+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3422C292D20006D00E8F693 /* SessionService+iOS.swift */; };
+		A3422C2F2D20036400E8F693 /* MirroringWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3422C2E2D20036400E8F693 /* MirroringWorkoutView.swift */; };
+		A3422C332D2003EB00E8F693 /* ElapsedTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3422C0D2D1FF8E800E8F693 /* ElapsedTimeView.swift */; };
+		A3422C352D20044200E8F693 /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3422C342D20044200E8F693 /* ButtonLabel.swift */; };
+		A3422C372D20049600E8F693 /* MetricsTimelineSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3422C362D20049600E8F693 /* MetricsTimelineSchedule.swift */; };
+		A3422C382D20049B00E8F693 /* MetricsTimelineSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3422C362D20049600E8F693 /* MetricsTimelineSchedule.swift */; };
+		A36358FC2D2B181900491D47 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36358FB2D2B181400491D47 /* Formatter.swift */; };
+		A36358FD2D2B183500491D47 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36358FB2D2B181400491D47 /* Formatter.swift */; };
+		A36358FF2D2B212500491D47 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36358FE2D2B211F00491D47 /* NotificationService.swift */; };
+		A36359002D2B212500491D47 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36358FE2D2B211F00491D47 /* NotificationService.swift */; };
+		A36359022D2B305000491D47 /* StreakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36359012D2B304800491D47 /* StreakObject.swift */; };
+		A36359032D2B305000491D47 /* StreakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36359012D2B304800491D47 /* StreakObject.swift */; };
+		A36359042D2B316E00491D47 /* StreakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36359012D2B304800491D47 /* StreakObject.swift */; };
+		A36359052D2B388F00491D47 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36358FB2D2B181400491D47 /* Formatter.swift */; };
+		A36359102D2D7E1900491D47 /* HealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36BE4852CFE36D10001BE46 /* HealthService.swift */; };
+		A36359162D2D8A8800491D47 /* TrophyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36359152D2D8A8800491D47 /* TrophyButton.swift */; };
+		A36359182D2D8AB700491D47 /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36359172D2D8AB700491D47 /* FilterButton.swift */; };
+		A363591A2D2D8B0600491D47 /* WorkoutRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36359192D2D8B0600491D47 /* WorkoutRow.swift */; };
+		A36359402D314BE100491D47 /* FeatureFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363593F2D314BE100491D47 /* FeatureFlag.swift */; };
+		A36359412D314BE100491D47 /* FeatureFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363593F2D314BE100491D47 /* FeatureFlag.swift */; };
+		A36359432D314E2C00491D47 /* FeatureFlagService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36359422D314E2C00491D47 /* FeatureFlagService.swift */; };
+		A36359442D314E2C00491D47 /* FeatureFlagService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36359422D314E2C00491D47 /* FeatureFlagService.swift */; };
+		A36651F02D1EE8530090ABEE /* ByTypeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36651EF2D1EE8500090ABEE /* ByTypeViewModelTests.swift */; };
+		A36652182D1F141A0090ABEE /* AAW Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A36651F52D1F14180090ABEE /* AAW Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A36652242D1F15B90090ABEE /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33083122D0F02BA0082BFD4 /* CircularProgressBar.swift */; };
+		A36652252D1F17420090ABEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38F73882CFCA1E400D4096D /* Assets.xcassets */; };
+		A36652292D1F17660090ABEE /* WorkoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36BE4872CFE3D890001BE46 /* WorkoutType.swift */; };
+		A366522A2D1F176B0090ABEE /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36BE47D2CFE343B0001BE46 /* Workout.swift */; };
+		A366522D2D1F17AC0090ABEE /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB6F02D188FDD001E8A21 /* CacheService.swift */; };
+		A36BE4762CFE333D0001BE46 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36BE4752CFE333D0001BE46 /* AppCoordinator.swift */; };
+		A36BE4782CFE33A60001BE46 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36BE4772CFE33A60001BE46 /* DIContainer.swift */; };
+		A36BE47B2CFE33D10001BE46 /* WorkoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36BE47A2CFE33D10001BE46 /* WorkoutService.swift */; };
+		A36BE47E2CFE343B0001BE46 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36BE47D2CFE343B0001BE46 /* Workout.swift */; };
+		A36BE4812CFE361A0001BE46 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36BE4802CFE361A0001BE46 /* ListView.swift */; };
+		A36BE4842CFE366A0001BE46 /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36BE4832CFE366A0001BE46 /* WorkoutViewModel.swift */; };
+		A36BE4862CFE36D10001BE46 /* HealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36BE4852CFE36D10001BE46 /* HealthService.swift */; };
+		A36BE4882CFE3D890001BE46 /* WorkoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36BE4872CFE3D890001BE46 /* WorkoutType.swift */; };
+		A37CC1D02D1F5B4900156B07 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37CC1C32D1F5B4900156B07 /* SessionService.swift */; };
+		A37CC1E52D1FED5400156B07 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37CC1C32D1F5B4900156B07 /* SessionService.swift */; };
+		A37CC1E82D1FEE2000156B07 /* SessionService+watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37CC1E62D1FEE1500156B07 /* SessionService+watchOS.swift */; };
 		A38F73832CFCA1E200D4096D /* AAWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F73822CFCA1E200D4096D /* AAWApp.swift */; };
 		A38F73852CFCA1E200D4096D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F73842CFCA1E200D4096D /* ContentView.swift */; };
-		A38F73872CFCA1E200D4096D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F73862CFCA1E200D4096D /* Item.swift */; };
 		A38F73892CFCA1E400D4096D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38F73882CFCA1E400D4096D /* Assets.xcassets */; };
 		A38F738D2CFCA1E400D4096D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38F738C2CFCA1E400D4096D /* Preview Assets.xcassets */; };
 		A38F73982CFCA1E400D4096D /* AAWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F73972CFCA1E400D4096D /* AAWTests.swift */; };
 		A38F73A22CFCA1E400D4096D /* AAWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F73A12CFCA1E400D4096D /* AAWUITests.swift */; };
 		A38F73A42CFCA1E400D4096D /* AAWUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F73A32CFCA1E400D4096D /* AAWUITestsLaunchTests.swift */; };
+		A3945EF42D20124D009A9554 /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3422C342D20044200E8F693 /* ButtonLabel.swift */; };
+		A3CFB6ED2D185C38001E8A21 /* GeminiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB6EC2D185C38001E8A21 /* GeminiService.swift */; };
+		A3CFB6EF2D1864F8001E8A21 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB6EE2D1864F8001E8A21 /* SegmentedControlView.swift */; };
+		A3CFB6F12D188FE3001E8A21 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB6F02D188FDD001E8A21 /* CacheService.swift */; };
+		A3CFB6F52D1A1351001E8A21 /* TrophyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB6F42D1A1351001E8A21 /* TrophyCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A32BBC9E2D20B55100B73DE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A38F73772CFCA1E200D4096D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A32BBC8D2D20B55000B73DE0;
+			remoteInfo = AAWStreakWidgetExtension;
+		};
+		A36652052D1F141A0090ABEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A38F73772CFCA1E200D4096D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A36651F42D1F14180090ABEE;
+			remoteInfo = "AAW Watch Watch App";
+		};
+		A366520F2D1F141A0090ABEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A38F73772CFCA1E200D4096D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A36651F42D1F14180090ABEE;
+			remoteInfo = "AAW Watch Watch App";
+		};
+		A36652162D1F141A0090ABEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A38F73772CFCA1E200D4096D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A36651F42D1F14180090ABEE;
+			remoteInfo = "AAW Watch Watch App";
+		};
 		A38F73942CFCA1E400D4096D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A38F73772CFCA1E200D4096D /* Project object */;
@@ -34,11 +120,82 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A32BBC732D20B09300B73DE0 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32BBC872D20B23E00B73DE0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A32BBCA02D20B55100B73DE0 /* AAWStreakWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36652192D1F141A0090ABEE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A36652182D1F141A0090ABEE /* AAW Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A31A0F042D12D103005C0045 /* ByTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByTypeView.swift; sourceTree = "<group>"; };
+		A31A0F062D12D2BA005C0045 /* ByTypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByTypeViewModel.swift; sourceTree = "<group>"; };
+		A31A0F0D2D1442C2005C0045 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		A31A0F112D145173005C0045 /* StoryContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryContentView.swift; sourceTree = "<group>"; };
+		A32BBC7A2D20B23E00B73DE0 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		A32BBC8E2D20B55000B73DE0 /* AAWStreakWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AAWStreakWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32BBC8F2D20B55000B73DE0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
+		A32BBC912D20B55000B73DE0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = /System/Library/Frameworks/SwiftUI.framework; sourceTree = "<absolute>"; };
+		A32BBCA92D21690200B73DE0 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		A33083122D0F02BA0082BFD4 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		A3422C0D2D1FF8E800E8F693 /* ElapsedTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeView.swift; sourceTree = "<group>"; };
+		A3422C292D20006D00E8F693 /* SessionService+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SessionService+iOS.swift"; sourceTree = "<group>"; };
+		A3422C2E2D20036400E8F693 /* MirroringWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirroringWorkoutView.swift; sourceTree = "<group>"; };
+		A3422C342D20044200E8F693 /* ButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
+		A3422C362D20049600E8F693 /* MetricsTimelineSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsTimelineSchedule.swift; sourceTree = "<group>"; };
+		A36358FB2D2B181400491D47 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		A36358FE2D2B211F00491D47 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		A36359012D2B304800491D47 /* StreakObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakObject.swift; sourceTree = "<group>"; };
+		A36359152D2D8A8800491D47 /* TrophyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyButton.swift; sourceTree = "<group>"; };
+		A36359172D2D8AB700491D47 /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
+		A36359192D2D8B0600491D47 /* WorkoutRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRow.swift; sourceTree = "<group>"; };
+		A363593F2D314BE100491D47 /* FeatureFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlag.swift; sourceTree = "<group>"; };
+		A36359422D314E2C00491D47 /* FeatureFlagService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlagService.swift; sourceTree = "<group>"; };
+		A36651EF2D1EE8500090ABEE /* ByTypeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByTypeViewModelTests.swift; sourceTree = "<group>"; };
+		A36651F52D1F14180090ABEE /* AAW Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AAW Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A36652042D1F14190090ABEE /* AAW Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AAW Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A366520E2D1F141A0090ABEE /* AAW Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AAW Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A36BE4752CFE333D0001BE46 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A36BE4772CFE33A60001BE46 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		A36BE47A2CFE33D10001BE46 /* WorkoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutService.swift; sourceTree = "<group>"; };
+		A36BE47D2CFE343B0001BE46 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		A36BE4802CFE361A0001BE46 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		A36BE4832CFE366A0001BE46 /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
+		A36BE4852CFE36D10001BE46 /* HealthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthService.swift; sourceTree = "<group>"; };
+		A36BE4872CFE3D890001BE46 /* WorkoutType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutType.swift; sourceTree = "<group>"; };
+		A37CC1C32D1F5B4900156B07 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		A37CC1E62D1FEE1500156B07 /* SessionService+watchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SessionService+watchOS.swift"; sourceTree = "<group>"; };
 		A38F737F2CFCA1E200D4096D /* AAW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AAW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38F73822CFCA1E200D4096D /* AAWApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAWApp.swift; sourceTree = "<group>"; };
 		A38F73842CFCA1E200D4096D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A38F73862CFCA1E200D4096D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A38F73882CFCA1E400D4096D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A38F738A2CFCA1E400D4096D /* AAW.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AAW.entitlements; sourceTree = "<group>"; };
 		A38F738C2CFCA1E400D4096D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -48,13 +205,65 @@
 		A38F739D2CFCA1E400D4096D /* AAWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AAWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38F73A12CFCA1E400D4096D /* AAWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAWUITests.swift; sourceTree = "<group>"; };
 		A38F73A32CFCA1E400D4096D /* AAWUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAWUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A3CFB6EC2D185C38001E8A21 /* GeminiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiService.swift; sourceTree = "<group>"; };
+		A3CFB6EE2D1864F8001E8A21 /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
+		A3CFB6F02D188FDD001E8A21 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		A3CFB6F42D1A1351001E8A21 /* TrophyCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A32BBCA12D20B55100B73DE0 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A32BBC8D2D20B55000B73DE0 /* AAWStreakWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A32BBC932D20B55000B73DE0 /* AAWStreakWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A32BBCA12D20B55100B73DE0 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = AAWStreakWidget; sourceTree = "<group>"; };
+		A36651F62D1F14180090ABEE /* AAW Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "AAW Watch App"; sourceTree = "<group>"; };
+		A36652072D1F141A0090ABEE /* AAW Watch AppTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "AAW Watch AppTests"; sourceTree = "<group>"; };
+		A36652112D1F141A0090ABEE /* AAW Watch AppUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "AAW Watch AppUITests"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		A32BBC8B2D20B55000B73DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32BBC922D20B55000B73DE0 /* SwiftUI.framework in Frameworks */,
+				A32BBC902D20B55000B73DE0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36651F22D1F14180090ABEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36652012D1F14190090ABEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A366520B2D1F141A0090ABEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A38F737C2CFCA1E200D4096D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31A0F0A2D12F841005C0045 /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +284,152 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A32BBC792D20B23E00B73DE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A32BBC7A2D20B23E00B73DE0 /* Intents.framework */,
+				A32BBC8F2D20B55000B73DE0 /* WidgetKit.framework */,
+				A32BBC912D20B55000B73DE0 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A36358FA2D2B180D00491D47 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A36358FB2D2B181400491D47 /* Formatter.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A36359092D2D7A3400491D47 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A363590F2D2D7ADA00491D47 /* Trophies */,
+				A363590E2D2D7ABB00491D47 /* Mirroring */,
+				A363590D2D2D7AA200491D47 /* ProgressShare */,
+				A363590C2D2D7A7400491D47 /* WorkoutTypeDetails */,
+				A363590A2D2D7A3900491D47 /* WorkoutsList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A363590A2D2D7A3900491D47 /* WorkoutsList */ = {
+			isa = PBXGroup;
+			children = (
+				A36359142D2D8A8100491D47 /* Views */,
+				A36BE4832CFE366A0001BE46 /* WorkoutViewModel.swift */,
+				A36BE4802CFE361A0001BE46 /* ListView.swift */,
+			);
+			path = WorkoutsList;
+			sourceTree = "<group>";
+		};
+		A363590C2D2D7A7400491D47 /* WorkoutTypeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A31A0F062D12D2BA005C0045 /* ByTypeViewModel.swift */,
+				A31A0F042D12D103005C0045 /* ByTypeView.swift */,
+			);
+			path = WorkoutTypeDetails;
+			sourceTree = "<group>";
+		};
+		A363590D2D2D7AA200491D47 /* ProgressShare */ = {
+			isa = PBXGroup;
+			children = (
+				A31A0F112D145173005C0045 /* StoryContentView.swift */,
+				A31A0F0D2D1442C2005C0045 /* StoryView.swift */,
+			);
+			path = ProgressShare;
+			sourceTree = "<group>";
+		};
+		A363590E2D2D7ABB00491D47 /* Mirroring */ = {
+			isa = PBXGroup;
+			children = (
+				A3422C2E2D20036400E8F693 /* MirroringWorkoutView.swift */,
+			);
+			path = Mirroring;
+			sourceTree = "<group>";
+		};
+		A363590F2D2D7ADA00491D47 /* Trophies */ = {
+			isa = PBXGroup;
+			children = (
+				A3CFB6F42D1A1351001E8A21 /* TrophyCollectionView.swift */,
+			);
+			path = Trophies;
+			sourceTree = "<group>";
+		};
+		A36359142D2D8A8100491D47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A36359192D2D8B0600491D47 /* WorkoutRow.swift */,
+				A36359172D2D8AB700491D47 /* FilterButton.swift */,
+				A36359152D2D8A8800491D47 /* TrophyButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A36BE4742CFE332F0001BE46 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A38F73842CFCA1E200D4096D /* ContentView.swift */,
+				A38F73822CFCA1E200D4096D /* AAWApp.swift */,
+				A36BE4752CFE333D0001BE46 /* AppCoordinator.swift */,
+				A36BE4772CFE33A60001BE46 /* DIContainer.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A36BE4792CFE33C20001BE46 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A36359422D314E2C00491D47 /* FeatureFlagService.swift */,
+				A36358FE2D2B211F00491D47 /* NotificationService.swift */,
+				A32BBCA92D21690200B73DE0 /* StorageService.swift */,
+				A3CFB6EC2D185C38001E8A21 /* GeminiService.swift */,
+				A3CFB6F02D188FDD001E8A21 /* CacheService.swift */,
+				A36BE47A2CFE33D10001BE46 /* WorkoutService.swift */,
+				A36BE4852CFE36D10001BE46 /* HealthService.swift */,
+				A37CC1C32D1F5B4900156B07 /* SessionService.swift */,
+				A3422C292D20006D00E8F693 /* SessionService+iOS.swift */,
+				A37CC1E62D1FEE1500156B07 /* SessionService+watchOS.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A36BE47C2CFE34300001BE46 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A363593F2D314BE100491D47 /* FeatureFlag.swift */,
+				A36359012D2B304800491D47 /* StreakObject.swift */,
+				A36BE47D2CFE343B0001BE46 /* Workout.swift */,
+				A36BE4872CFE3D890001BE46 /* WorkoutType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A36BE47F2CFE36000001BE46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3422C362D20049600E8F693 /* MetricsTimelineSchedule.swift */,
+				A3422C342D20044200E8F693 /* ButtonLabel.swift */,
+				A3CFB6EE2D1864F8001E8A21 /* SegmentedControlView.swift */,
+				A33083122D0F02BA0082BFD4 /* CircularProgressBar.swift */,
+				A3422C0D2D1FF8E800E8F693 /* ElapsedTimeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A38F73762CFCA1E200D4096D = {
 			isa = PBXGroup;
 			children = (
 				A38F73812CFCA1E200D4096D /* AAW */,
 				A38F73962CFCA1E400D4096D /* AAWTests */,
 				A38F73A02CFCA1E400D4096D /* AAWUITests */,
+				A36651F62D1F14180090ABEE /* AAW Watch App */,
+				A36652072D1F141A0090ABEE /* AAW Watch AppTests */,
+				A36652112D1F141A0090ABEE /* AAW Watch AppUITests */,
+				A32BBC932D20B55000B73DE0 /* AAWStreakWidget */,
+				A32BBC792D20B23E00B73DE0 /* Frameworks */,
 				A38F73802CFCA1E200D4096D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +440,10 @@
 				A38F737F2CFCA1E200D4096D /* AAW.app */,
 				A38F73932CFCA1E400D4096D /* AAWTests.xctest */,
 				A38F739D2CFCA1E400D4096D /* AAWUITests.xctest */,
+				A36651F52D1F14180090ABEE /* AAW Watch App.app */,
+				A36652042D1F14190090ABEE /* AAW Watch AppTests.xctest */,
+				A366520E2D1F141A0090ABEE /* AAW Watch AppUITests.xctest */,
+				A32BBC8E2D20B55000B73DE0 /* AAWStreakWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,9 +451,12 @@
 		A38F73812CFCA1E200D4096D /* AAW */ = {
 			isa = PBXGroup;
 			children = (
-				A38F73822CFCA1E200D4096D /* AAWApp.swift */,
-				A38F73842CFCA1E200D4096D /* ContentView.swift */,
-				A38F73862CFCA1E200D4096D /* Item.swift */,
+				A36359092D2D7A3400491D47 /* Scenes */,
+				A36358FA2D2B180D00491D47 /* Shared */,
+				A36BE47F2CFE36000001BE46 /* Views */,
+				A36BE47C2CFE34300001BE46 /* Models */,
+				A36BE4792CFE33C20001BE46 /* Services */,
+				A36BE4742CFE332F0001BE46 /* App */,
 				A38F73882CFCA1E400D4096D /* Assets.xcassets */,
 				A38F738A2CFCA1E400D4096D /* AAW.entitlements */,
 				A38F738E2CFCA1E400D4096D /* Info.plist */,
@@ -120,6 +476,7 @@
 		A38F73962CFCA1E400D4096D /* AAWTests */ = {
 			isa = PBXGroup;
 			children = (
+				A36651EF2D1EE8500090ABEE /* ByTypeViewModelTests.swift */,
 				A38F73972CFCA1E400D4096D /* AAWTests.swift */,
 			);
 			path = AAWTests;
@@ -137,6 +494,96 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A32BBC8D2D20B55000B73DE0 /* AAWStreakWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A32BBCA22D20B55100B73DE0 /* Build configuration list for PBXNativeTarget "AAWStreakWidgetExtension" */;
+			buildPhases = (
+				A32BBC8A2D20B55000B73DE0 /* Sources */,
+				A32BBC8B2D20B55000B73DE0 /* Frameworks */,
+				A32BBC8C2D20B55000B73DE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A32BBC932D20B55000B73DE0 /* AAWStreakWidget */,
+			);
+			name = AAWStreakWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = AAWStreakWidgetExtension;
+			productReference = A32BBC8E2D20B55000B73DE0 /* AAWStreakWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A36651F42D1F14180090ABEE /* AAW Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A36652202D1F141A0090ABEE /* Build configuration list for PBXNativeTarget "AAW Watch App" */;
+			buildPhases = (
+				A36651F12D1F14180090ABEE /* Sources */,
+				A36651F22D1F14180090ABEE /* Frameworks */,
+				A36651F32D1F14180090ABEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A36651F62D1F14180090ABEE /* AAW Watch App */,
+			);
+			name = "AAW Watch App";
+			packageProductDependencies = (
+			);
+			productName = "AAW Watch Watch App";
+			productReference = A36651F52D1F14180090ABEE /* AAW Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A36652032D1F14190090ABEE /* AAW Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A36652212D1F141A0090ABEE /* Build configuration list for PBXNativeTarget "AAW Watch AppTests" */;
+			buildPhases = (
+				A36652002D1F14190090ABEE /* Sources */,
+				A36652012D1F14190090ABEE /* Frameworks */,
+				A36652022D1F14190090ABEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A36652062D1F141A0090ABEE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A36652072D1F141A0090ABEE /* AAW Watch AppTests */,
+			);
+			name = "AAW Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "AAW Watch Watch AppTests";
+			productReference = A36652042D1F14190090ABEE /* AAW Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A366520D2D1F141A0090ABEE /* AAW Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A36652222D1F141A0090ABEE /* Build configuration list for PBXNativeTarget "AAW Watch AppUITests" */;
+			buildPhases = (
+				A366520A2D1F141A0090ABEE /* Sources */,
+				A366520B2D1F141A0090ABEE /* Frameworks */,
+				A366520C2D1F141A0090ABEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A36652102D1F141A0090ABEE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A36652112D1F141A0090ABEE /* AAW Watch AppUITests */,
+			);
+			name = "AAW Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "AAW Watch Watch AppUITests";
+			productReference = A366520E2D1F141A0090ABEE /* AAW Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		A38F737E2CFCA1E200D4096D /* AAW */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A38F73A72CFCA1E400D4096D /* Build configuration list for PBXNativeTarget "AAW" */;
@@ -144,10 +591,15 @@
 				A38F737B2CFCA1E200D4096D /* Sources */,
 				A38F737C2CFCA1E200D4096D /* Frameworks */,
 				A38F737D2CFCA1E200D4096D /* Resources */,
+				A36652192D1F141A0090ABEE /* Embed Watch Content */,
+				A32BBC732D20B09300B73DE0 /* Embed ExtensionKit Extensions */,
+				A32BBC872D20B23E00B73DE0 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A36652172D1F141A0090ABEE /* PBXTargetDependency */,
+				A32BBC9F2D20B55100B73DE0 /* PBXTargetDependency */,
 			);
 			name = AAW;
 			productName = AAW;
@@ -197,9 +649,23 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					A32BBC8D2D20B55000B73DE0 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A36651F42D1F14180090ABEE = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A36652032D1F14190090ABEE = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A36651F42D1F14180090ABEE;
+					};
+					A366520D2D1F141A0090ABEE = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A36651F42D1F14180090ABEE;
+					};
 					A38F737E2CFCA1E200D4096D = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -222,6 +688,9 @@
 				Base,
 			);
 			mainGroup = A38F73762CFCA1E200D4096D;
+			packageReferences = (
+				A31A0F082D12F841005C0045 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = A38F73802CFCA1E200D4096D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -229,11 +698,44 @@
 				A38F737E2CFCA1E200D4096D /* AAW */,
 				A38F73922CFCA1E400D4096D /* AAWTests */,
 				A38F739C2CFCA1E400D4096D /* AAWUITests */,
+				A36651F42D1F14180090ABEE /* AAW Watch App */,
+				A36652032D1F14190090ABEE /* AAW Watch AppTests */,
+				A366520D2D1F141A0090ABEE /* AAW Watch AppUITests */,
+				A32BBC8D2D20B55000B73DE0 /* AAWStreakWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A32BBC8C2D20B55000B73DE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36651F32D1F14180090ABEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A36652252D1F17420090ABEE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36652022D1F14190090ABEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A366520C2D1F141A0090ABEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A38F737D2CFCA1E200D4096D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,13 +762,92 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A32BBC8A2D20B55000B73DE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A36358FD2D2B183500491D47 /* Formatter.swift in Sources */,
+				A32BBCAC2D216AD400B73DE0 /* StorageService.swift in Sources */,
+				A36359042D2B316E00491D47 /* StreakObject.swift in Sources */,
+				A32BBCA82D20C36A00B73DE0 /* HealthService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36651F12D1F14180090ABEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A36359052D2B388F00491D47 /* Formatter.swift in Sources */,
+				A3422C1A2D1FF8E800E8F693 /* ElapsedTimeView.swift in Sources */,
+				A32BBCAB2D21690900B73DE0 /* StorageService.swift in Sources */,
+				A3422C382D20049B00E8F693 /* MetricsTimelineSchedule.swift in Sources */,
+				A36359102D2D7E1900491D47 /* HealthService.swift in Sources */,
+				A36652292D1F17660090ABEE /* WorkoutType.swift in Sources */,
+				A366522A2D1F176B0090ABEE /* Workout.swift in Sources */,
+				A36652242D1F15B90090ABEE /* CircularProgressBar.swift in Sources */,
+				A37CC1D02D1F5B4900156B07 /* SessionService.swift in Sources */,
+				A36358FF2D2B212500491D47 /* NotificationService.swift in Sources */,
+				A36359032D2B305000491D47 /* StreakObject.swift in Sources */,
+				A37CC1E82D1FEE2000156B07 /* SessionService+watchOS.swift in Sources */,
+				A36359402D314BE100491D47 /* FeatureFlag.swift in Sources */,
+				A3945EF42D20124D009A9554 /* ButtonLabel.swift in Sources */,
+				A366522D2D1F17AC0090ABEE /* CacheService.swift in Sources */,
+				A36359432D314E2C00491D47 /* FeatureFlagService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36652002D1F14190090ABEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A366520A2D1F141A0090ABEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A38F737B2CFCA1E200D4096D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A36BE4812CFE361A0001BE46 /* ListView.swift in Sources */,
+				A36359412D314BE100491D47 /* FeatureFlag.swift in Sources */,
+				A3422C352D20044200E8F693 /* ButtonLabel.swift in Sources */,
+				A3CFB6EF2D1864F8001E8A21 /* SegmentedControlView.swift in Sources */,
+				A36359162D2D8A8800491D47 /* TrophyButton.swift in Sources */,
+				A36359182D2D8AB700491D47 /* FilterButton.swift in Sources */,
+				A36358FC2D2B181900491D47 /* Formatter.swift in Sources */,
+				A3422C2B2D20007600E8F693 /* SessionService+iOS.swift in Sources */,
+				A36BE4882CFE3D890001BE46 /* WorkoutType.swift in Sources */,
+				A36BE4842CFE366A0001BE46 /* WorkoutViewModel.swift in Sources */,
 				A38F73852CFCA1E200D4096D /* ContentView.swift in Sources */,
-				A38F73872CFCA1E200D4096D /* Item.swift in Sources */,
+				A31A0F072D12D2C2005C0045 /* ByTypeViewModel.swift in Sources */,
+				A3CFB6F52D1A1351001E8A21 /* TrophyCollectionView.swift in Sources */,
+				A3CFB6ED2D185C38001E8A21 /* GeminiService.swift in Sources */,
+				A32BBCAA2D21690900B73DE0 /* StorageService.swift in Sources */,
+				A31A0F0E2D1442C2005C0045 /* StoryView.swift in Sources */,
+				A36BE47E2CFE343B0001BE46 /* Workout.swift in Sources */,
+				A33083132D0F02BA0082BFD4 /* CircularProgressBar.swift in Sources */,
+				A3422C372D20049600E8F693 /* MetricsTimelineSchedule.swift in Sources */,
+				A36359002D2B212500491D47 /* NotificationService.swift in Sources */,
+				A36BE4862CFE36D10001BE46 /* HealthService.swift in Sources */,
+				A31A0F122D145173005C0045 /* StoryContentView.swift in Sources */,
+				A3422C2F2D20036400E8F693 /* MirroringWorkoutView.swift in Sources */,
+				A3422C332D2003EB00E8F693 /* ElapsedTimeView.swift in Sources */,
+				A31A0F052D12D118005C0045 /* ByTypeView.swift in Sources */,
+				A36BE4762CFE333D0001BE46 /* AppCoordinator.swift in Sources */,
+				A36359442D314E2C00491D47 /* FeatureFlagService.swift in Sources */,
+				A3CFB6F12D188FE3001E8A21 /* CacheService.swift in Sources */,
+				A37CC1E52D1FED5400156B07 /* SessionService.swift in Sources */,
+				A36BE47B2CFE33D10001BE46 /* WorkoutService.swift in Sources */,
+				A36BE4782CFE33A60001BE46 /* DIContainer.swift in Sources */,
 				A38F73832CFCA1E200D4096D /* AAWApp.swift in Sources */,
+				A363591A2D2D8B0600491D47 /* WorkoutRow.swift in Sources */,
+				A36359022D2B305000491D47 /* StreakObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +856,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A38F73982CFCA1E400D4096D /* AAWTests.swift in Sources */,
+				A36651F02D1EE8530090ABEE /* ByTypeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +872,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A32BBC9F2D20B55100B73DE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A32BBC8D2D20B55000B73DE0 /* AAWStreakWidgetExtension */;
+			targetProxy = A32BBC9E2D20B55100B73DE0 /* PBXContainerItemProxy */;
+		};
+		A36652062D1F141A0090ABEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A36651F42D1F14180090ABEE /* AAW Watch App */;
+			targetProxy = A36652052D1F141A0090ABEE /* PBXContainerItemProxy */;
+		};
+		A36652102D1F141A0090ABEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A36651F42D1F14180090ABEE /* AAW Watch App */;
+			targetProxy = A366520F2D1F141A0090ABEE /* PBXContainerItemProxy */;
+		};
+		A36652172D1F141A0090ABEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A36651F42D1F14180090ABEE /* AAW Watch App */;
+			targetProxy = A36652162D1F141A0090ABEE /* PBXContainerItemProxy */;
+		};
 		A38F73952CFCA1E400D4096D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A38F737E2CFCA1E200D4096D /* AAW */;
@@ -303,6 +905,239 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		A32BBCA32D20B55100B73DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = AAWStreakWidget/AAWStreakWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGE7YRQW2V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AAWStreakWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AAWStreakWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tymh.AAW.AAWStreakWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		A32BBCA42D20B55100B73DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = AAWStreakWidget/AAWStreakWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGE7YRQW2V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AAWStreakWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AAWStreakWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tymh.AAW.AAWStreakWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		A366521A2D1F141A0090ABEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "AAW Watch App/AAW Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AAW Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = TGE7YRQW2V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AAW-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = AAW;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "This app requires access to your Apple Health data. This will allow us to track and display your workout progress, including completed exercises and their details";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires access to your Apple Health data. This will allow us to track and display your workout progress, including completed exercises and their details";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires access to your Apple Health data. This will allow us to track and display your workout progress, including completed exercises and their details";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.tymh.AAW;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tymh.AAW.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Debug;
+		};
+		A366521B2D1F141A0090ABEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "AAW Watch App/AAW Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AAW Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = TGE7YRQW2V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AAW-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = AAW;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "This app requires access to your Apple Health data. This will allow us to track and display your workout progress, including completed exercises and their details";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires access to your Apple Health data. This will allow us to track and display your workout progress, including completed exercises and their details";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires access to your Apple Health data. This will allow us to track and display your workout progress, including completed exercises and their details";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.tymh.AAW;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tymh.AAW.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Release;
+		};
+		A366521C2D1F141A0090ABEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGE7YRQW2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymh.AAW-Watch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AAW Watch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AAW Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		A366521D2D1F141A0090ABEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGE7YRQW2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymh.AAW-Watch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AAW Watch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AAW Watch Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		A366521E2D1F141A0090ABEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGE7YRQW2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymh.AAW-Watch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "AAW Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		A366521F2D1F141A0090ABEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGE7YRQW2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymh.AAW-Watch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "AAW Watch Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
 		A38F73A52CFCA1E400D4096D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -337,6 +1172,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -398,6 +1234,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -423,14 +1260,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AAW/AAW.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"AAW/Preview Content\"";
 				DEVELOPMENT_TEAM = TGE7YRQW2V;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AAW/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AAW;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires access to your Apple Health data. This will allow us to track and display your workout progress, including completed exercises and their details";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires access to your Apple Health data. This will allow us to track and display your workout progress, including completed exercises and their details";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -439,20 +1282,23 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tymh.AAW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,14 +1308,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AAW/AAW.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"AAW/Preview Content\"";
 				DEVELOPMENT_TEAM = TGE7YRQW2V;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AAW/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AAW;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires access to your Apple Health data. This will allow us to track and display your workout progress, including completed exercises and their details";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires access to your Apple Health data. This will allow us to track and display your workout progress, including completed exercises and their details";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -478,30 +1330,33 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tymh.AAW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		A38F73AB2CFCA1E400D4096D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TGE7YRQW2V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -521,10 +1376,10 @@
 		A38F73AC2CFCA1E400D4096D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TGE7YRQW2V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -544,9 +1399,9 @@
 		A38F73AE2CFCA1E400D4096D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TGE7YRQW2V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -566,9 +1421,9 @@
 		A38F73AF2CFCA1E400D4096D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TGE7YRQW2V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -588,6 +1443,42 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A32BBCA22D20B55100B73DE0 /* Build configuration list for PBXNativeTarget "AAWStreakWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32BBCA32D20B55100B73DE0 /* Debug */,
+				A32BBCA42D20B55100B73DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A36652202D1F141A0090ABEE /* Build configuration list for PBXNativeTarget "AAW Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A366521A2D1F141A0090ABEE /* Debug */,
+				A366521B2D1F141A0090ABEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A36652212D1F141A0090ABEE /* Build configuration list for PBXNativeTarget "AAW Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A366521C2D1F141A0090ABEE /* Debug */,
+				A366521D2D1F141A0090ABEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A36652222D1F141A0090ABEE /* Build configuration list for PBXNativeTarget "AAW Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A366521E2D1F141A0090ABEE /* Debug */,
+				A366521F2D1F141A0090ABEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A38F737A2CFCA1E200D4096D /* Build configuration list for PBXProject "AAW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -625,6 +1516,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A31A0F082D12F841005C0045 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A31A0F092D12F841005C0045 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A31A0F082D12F841005C0045 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A38F73772CFCA1E200D4096D /* Project object */;
 }

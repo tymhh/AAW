@@ -4,10 +4,53 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AAW Watch App.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>AAW.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>AAWStreakWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A32BBC772D20B23E00B73DE0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A32BBC8D2D20B55000B73DE0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A36651F42D1F14180090ABEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A36652032D1F14190090ABEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A366520D2D1F141A0090ABEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A38F737E2CFCA1E200D4096D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
