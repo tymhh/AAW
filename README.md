@@ -22,13 +22,13 @@ An intuitive iOS app designed to track your workouts, monitor progress, and set 
 - **Social Sharing**: Share your progress as a story on social media.
 - **Apple Watch Companion App**: Start workouts and track progress directly from your Apple Watch.
 
-- ## 🛠️ Technologies
+## 🛠️ Technologies
 
 - Swift, SwiftUI, Combine, UserNotifications, WatchConnectivity, XCTest
 - HealthKit, WidgetKit, CloudKit
 - Gemini API Model: 1.5 Flash
 
-- ## 📝 To-Do
+## 📝 To-Do
 
 Here’s a list of planned features and enhancements for the app:
 
@@ -48,7 +48,7 @@ Here’s a list of planned features and enhancements for the app:
 - [x] Create widgets for streak tracking.
 - [x] Integrate Gemini API (currrently just as an expirience. Functinaly no so useful **Disabled with feature-flag**).
   
-- ## 📃 License
+## 📃 License
 
 - This project is licensed under the MIT License.
 ---
