@@ -27,6 +27,26 @@ An intuitive iOS app designed to track your workouts, monitor progress, and set 
 - Swift, SwiftUI, Combine, UserNotifications, WatchConnectivity, XCTest
 - HealthKit, WidgetKit, CloudKit
 - Gemini API Model: 1.5 Flash
+
+- ## 📝 To-Do
+
+Here’s a list of planned features and enhancements for the app:
+
+### 🚀 Features
+- [ ] Add posibility to pin workouts or "add to favourites".
+- [ ] Integrate real-time feature-flags sync with iCloud.
+- [ ] Implement personalized workout suggestions based on user history.
+
+### 🛠️ Technical Enhancements
+- [ ] Redefine usage of Gemini API.
+- [ ] App content localisation.
+- [ ] Write log and share it.
+- [ ] Add more unit tests for key modules.
+
+### ✅ Completed Tasks
+- [x] Add Apple Watch companion app for starting and tracking workouts.
+- [x] Create widgets for streak tracking.
+- [x] Integrate Gemini API (currrently just as an expirience. Functinaly no so useful **Disabled with feature-flag**).
   
 - ## 📃 License
 
