@@ -52,4 +52,10 @@ class AppCoordinator: ObservableObject {
     func presentFullScreenCover(_ cover: FullScreenCover) {
         self.fullScreenCover = cover
     }
+    
+    func goToSystemSetting() {
+        if let settingsURL = URL(string: "App-prefs:root=General") {
+            UIApplication.shared.open(settingsURL)
+        }
+    }
 }

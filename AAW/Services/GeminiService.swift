@@ -99,7 +99,11 @@ struct WorkoutRequestObjcet {
     }
 }
 
-class GeminiService {
+protocol GeminiServiceProtocol {
+    func streamMessage(prompt: String) async throws -> [String: String]?
+}
+
+class GeminiService: GeminiServiceProtocol {
     private let apiKey = ""
     private lazy var endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?alt=sse&key=\(apiKey)"
     private let sesssion = URLSession(configuration: .default)

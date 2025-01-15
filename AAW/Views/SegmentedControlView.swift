@@ -43,7 +43,8 @@ struct SegmentedControlView: View {
                 Text($0)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .multilineTextAlignment(.leading)
-                    .padding(.horizontal, 16)
+                    .padding(.horizontal, 24)
+                    .padding(.bottom, 16)
             }
         }
        

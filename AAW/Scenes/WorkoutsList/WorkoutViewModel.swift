@@ -25,9 +25,10 @@ class WorkoutViewModel: ObservableObject {
     
     private var cancellables: Set<AnyCancellable> = []
     private var data: [WorkoutType] = []
-    private let workoutService: WorkoutService
-    private let storageService: StorageService
-    private let healthService: HealthService
+    private let workoutService: WorkoutServiceProtocol
+    private let storageService: StorageServiceProtocol
+    private let healthService: HealthServiceProtocol
+    private let cloudKitService: CloudKitServiceProtocol
     internal let sessionService: SessionService
     
     @Published var displayList: [WorkoutType] = []
@@ -36,17 +37,21 @@ class WorkoutViewModel: ObservableObject {
     @Published var progress: CGFloat = 0
     @Published var progressString: String
     @Published var progressPercent: String = "...%"
+    @Published var userRanking: Int?
     @Published var filter: Filter = .all
 
-    init(workoutService: WorkoutService = DIContainer.shared.workoutService,
+    init(workoutService: WorkoutServiceProtocol = DIContainer.shared.workoutService,
          sessionService: SessionService = DIContainer.shared.sessionService,
-         HealthService: HealthService = DIContainer.shared.healthService,
-         storageService: StorageService = DIContainer.shared.storageService) {
+         HealthService: HealthServiceProtocol = DIContainer.shared.healthService,
+         cloudKitService: CloudKitServiceProtocol = DIContainer.shared.cloudKitService,
+         storageService: StorageServiceProtocol = DIContainer.shared.storageService) {
         self.workoutService = workoutService
         self.sessionService = sessionService
         self.storageService = storageService
         self.healthService = HealthService
+        self.cloudKitService = cloudKitService
         self.progressString = "... / \(workoutService.allTypes.count)"
+        self.userRanking = storageService.fetchUserProgress(userId: nil)?.value
         
         subscribeToSamplesUpdate()
     }
@@ -70,6 +75,7 @@ class WorkoutViewModel: ObservableObject {
             resolveProgress(fetch.progress)
             saveSteaks()
             reloadWidget()
+            saveUserProgress(fetch.progress)
             error = nil
         } catch {
             displayList = workoutService.allTypes.map { .init(healthType: Int($0.rawValue)) }
@@ -90,7 +96,7 @@ class WorkoutViewModel: ObservableObject {
     }
     
     private func subscribeToSamplesUpdate() {
-        workoutService.$samples
+        workoutService.samplesPublisher
             .receive(on: DispatchQueue.main)
             .compactMap { $0 }
             .sink { [weak self] samples in
@@ -125,6 +131,18 @@ class WorkoutViewModel: ObservableObject {
     
     private func reloadWidget() {
         WidgetCenter.shared.reloadAllTimelines()
+    }
+    
+    private func saveUserProgress(_ fetch: Int) {
+        Task {
+            let record = try await cloudKitService.updateOrCreateUserProgress(newProgress: fetch)
+            let rank = try await cloudKitService.findUserRank()
+            userRanking = rank.map { ($0) }
+            storageService.saveOrUpdateUserProgress(
+                record: .init(userId: record["userId"] as? String,
+                              value: rank)
+            )
+        }
     }
 }
 

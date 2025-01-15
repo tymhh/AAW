@@ -10,21 +10,26 @@ import Foundation
 final class DIContainer: NSObject, ObservableObject {
     static let shared = DIContainer()
 
-    let healthService: HealthService
     var sessionService: SessionService
-    let storageService: StorageService
-    let workoutService: WorkoutService
-    let geminiService: GeminiService
+    let healthService: HealthServiceProtocol
+    let storageService: StorageServiceProtocol
+    let workoutService: WorkoutServiceProtocol
+    let geminiService: GeminiServiceProtocol
     let notificationService: NotificationService
-    let featureFlagService: FeatureFlagService
+    let featureFlagService: FeatureFlagServiceProtocol
+    let cloudKitService: CloudKitServiceProtocol
 
     private override init() {
-        healthService = HealthService()
-        storageService = StorageService()
-        sessionService = SessionService(healthService: healthService)
-        featureFlagService = FeatureFlagService()
         notificationService = NotificationService()
         geminiService = GeminiService()
+        let healthService = HealthService()
+        self.healthService = healthService
+        let storageService = StorageService()
+        self.storageService = StorageService()
+        let cloudKitService = CloudKitService()
+        self.cloudKitService = cloudKitService
+        sessionService = SessionService(healthService: healthService)
+        featureFlagService = FeatureFlagService(cloudKitService: cloudKitService)
         workoutService = WorkoutService(healthService: healthService,
                                         notificationService: notificationService,
                                         storageService: storageService)

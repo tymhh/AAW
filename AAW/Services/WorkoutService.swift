@@ -9,12 +9,26 @@ import HealthKit
 import WidgetKit
 import Combine
 
-class WorkoutService {
+protocol WorkoutServiceProtocol {
+    func fetchList() async throws -> (data: [WorkoutType], progress: Int)
+    func processFetchedSamples(_ workouts: [HKWorkout]) -> (data: [WorkoutType], progress: Int)
+    func startObservingChanges()
+    
+    var samples: [HKWorkout]? { get }
+    var samplesPublished: Published<[HKWorkout]?> { get }
+    var samplesPublisher: Published<[HKWorkout]?>.Publisher { get }
+    var allTypes: [HKWorkoutActivityType] { get }
+}
+
+class WorkoutService: WorkoutServiceProtocol {
+    
     private let healthService: HealthService
     private let storageService: StorageService
     private let notificationService: NotificationService
     let allTypes: [HKWorkoutActivityType]
     @Published var samples: [HKWorkout]?
+    var samplesPublished: Published<[HKWorkout]?> { _samples }
+    var samplesPublisher: Published<[HKWorkout]?>.Publisher { $samples }
     
     init(healthService: HealthService,
          notificationService: NotificationService,

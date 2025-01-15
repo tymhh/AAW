@@ -34,6 +34,7 @@ struct ByTypeView: View {
                 await viewModel.requestInfo()
             }
         }
+        .listSectionSpacing(8)
         .listStyle(.grouped)
     }
     

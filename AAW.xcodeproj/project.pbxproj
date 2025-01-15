@@ -69,6 +69,12 @@
 		A38F73A22CFCA1E400D4096D /* AAWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F73A12CFCA1E400D4096D /* AAWUITests.swift */; };
 		A38F73A42CFCA1E400D4096D /* AAWUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F73A32CFCA1E400D4096D /* AAWUITestsLaunchTests.swift */; };
 		A3945EF42D20124D009A9554 /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3422C342D20044200E8F693 /* ButtonLabel.swift */; };
+		A395293C2D36C2BC00DB5516 /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A395293B2D36C2B500DB5516 /* CloudKitService.swift */; };
+		A395293D2D36C2BC00DB5516 /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A395293B2D36C2B500DB5516 /* CloudKitService.swift */; };
+		A395293F2D37DB7000DB5516 /* RankUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A395293E2D37DB7000DB5516 /* RankUsersTests.swift */; };
+		A39529652D3820F500DB5516 /* GlobalProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39529642D3820F500DB5516 /* GlobalProgress.swift */; };
+		A39529662D3820F500DB5516 /* GlobalProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39529642D3820F500DB5516 /* GlobalProgress.swift */; };
+		A39529672D382C0B00DB5516 /* GlobalProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39529642D3820F500DB5516 /* GlobalProgress.swift */; };
 		A3CFB6ED2D185C38001E8A21 /* GeminiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB6EC2D185C38001E8A21 /* GeminiService.swift */; };
 		A3CFB6EF2D1864F8001E8A21 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB6EE2D1864F8001E8A21 /* SegmentedControlView.swift */; };
 		A3CFB6F12D188FE3001E8A21 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB6F02D188FDD001E8A21 /* CacheService.swift */; };
@@ -205,6 +211,9 @@
 		A38F739D2CFCA1E400D4096D /* AAWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AAWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38F73A12CFCA1E400D4096D /* AAWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAWUITests.swift; sourceTree = "<group>"; };
 		A38F73A32CFCA1E400D4096D /* AAWUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAWUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A395293B2D36C2B500DB5516 /* CloudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
+		A395293E2D37DB7000DB5516 /* RankUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankUsersTests.swift; sourceTree = "<group>"; };
+		A39529642D3820F500DB5516 /* GlobalProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalProgress.swift; sourceTree = "<group>"; };
 		A3CFB6EC2D185C38001E8A21 /* GeminiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiService.swift; sourceTree = "<group>"; };
 		A3CFB6EE2D1864F8001E8A21 /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
 		A3CFB6F02D188FDD001E8A21 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
@@ -382,6 +391,7 @@
 		A36BE4792CFE33C20001BE46 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A395293B2D36C2B500DB5516 /* CloudKitService.swift */,
 				A36359422D314E2C00491D47 /* FeatureFlagService.swift */,
 				A36358FE2D2B211F00491D47 /* NotificationService.swift */,
 				A32BBCA92D21690200B73DE0 /* StorageService.swift */,
@@ -399,6 +409,7 @@
 		A36BE47C2CFE34300001BE46 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A39529642D3820F500DB5516 /* GlobalProgress.swift */,
 				A363593F2D314BE100491D47 /* FeatureFlag.swift */,
 				A36359012D2B304800491D47 /* StreakObject.swift */,
 				A36BE47D2CFE343B0001BE46 /* Workout.swift */,
@@ -476,6 +487,7 @@
 		A38F73962CFCA1E400D4096D /* AAWTests */ = {
 			isa = PBXGroup;
 			children = (
+				A395293E2D37DB7000DB5516 /* RankUsersTests.swift */,
 				A36651EF2D1EE8500090ABEE /* ByTypeViewModelTests.swift */,
 				A38F73972CFCA1E400D4096D /* AAWTests.swift */,
 			);
@@ -767,6 +779,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A36358FD2D2B183500491D47 /* Formatter.swift in Sources */,
+				A39529672D382C0B00DB5516 /* GlobalProgress.swift in Sources */,
 				A32BBCAC2D216AD400B73DE0 /* StorageService.swift in Sources */,
 				A36359042D2B316E00491D47 /* StreakObject.swift in Sources */,
 				A32BBCA82D20C36A00B73DE0 /* HealthService.swift in Sources */,
@@ -779,6 +792,7 @@
 			files = (
 				A36359052D2B388F00491D47 /* Formatter.swift in Sources */,
 				A3422C1A2D1FF8E800E8F693 /* ElapsedTimeView.swift in Sources */,
+				A395293C2D36C2BC00DB5516 /* CloudKitService.swift in Sources */,
 				A32BBCAB2D21690900B73DE0 /* StorageService.swift in Sources */,
 				A3422C382D20049B00E8F693 /* MetricsTimelineSchedule.swift in Sources */,
 				A36359102D2D7E1900491D47 /* HealthService.swift in Sources */,
@@ -787,6 +801,7 @@
 				A36652242D1F15B90090ABEE /* CircularProgressBar.swift in Sources */,
 				A37CC1D02D1F5B4900156B07 /* SessionService.swift in Sources */,
 				A36358FF2D2B212500491D47 /* NotificationService.swift in Sources */,
+				A39529652D3820F500DB5516 /* GlobalProgress.swift in Sources */,
 				A36359032D2B305000491D47 /* StreakObject.swift in Sources */,
 				A37CC1E82D1FEE2000156B07 /* SessionService+watchOS.swift in Sources */,
 				A36359402D314BE100491D47 /* FeatureFlag.swift in Sources */,
@@ -827,9 +842,11 @@
 				A38F73852CFCA1E200D4096D /* ContentView.swift in Sources */,
 				A31A0F072D12D2C2005C0045 /* ByTypeViewModel.swift in Sources */,
 				A3CFB6F52D1A1351001E8A21 /* TrophyCollectionView.swift in Sources */,
+				A395293D2D36C2BC00DB5516 /* CloudKitService.swift in Sources */,
 				A3CFB6ED2D185C38001E8A21 /* GeminiService.swift in Sources */,
 				A32BBCAA2D21690900B73DE0 /* StorageService.swift in Sources */,
 				A31A0F0E2D1442C2005C0045 /* StoryView.swift in Sources */,
+				A39529662D3820F500DB5516 /* GlobalProgress.swift in Sources */,
 				A36BE47E2CFE343B0001BE46 /* Workout.swift in Sources */,
 				A33083132D0F02BA0082BFD4 /* CircularProgressBar.swift in Sources */,
 				A3422C372D20049600E8F693 /* MetricsTimelineSchedule.swift in Sources */,
@@ -857,6 +874,7 @@
 			files = (
 				A38F73982CFCA1E400D4096D /* AAWTests.swift in Sources */,
 				A36651F02D1EE8530090ABEE /* ByTypeViewModelTests.swift in Sources */,
+				A395293F2D37DB7000DB5516 /* RankUsersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1289,7 +1307,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tymh.AAW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1337,7 +1355,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tymh.AAW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -7,7 +7,15 @@
 
 import HealthKit
 
-class HealthService {
+protocol HealthServiceProtocol {
+    func fetchSamples() async throws -> [HKWorkout]
+    func resolveObservingChanges() async throws -> (samples: [HKWorkout], added: HKWorkout?)
+    func startObservingChanges(updateHandler: @escaping @Sendable (HKObserverQuery, @escaping HKObserverQueryCompletionHandler, (any Error)?) -> Void)
+    
+    var healthStore: HKHealthStore { get }
+}
+
+class HealthService: HealthServiceProtocol {
     static let workoutType: HKSampleType = HKQuantityType.workoutType()
     private var lastAnchor: HKQueryAnchor?
     private let typesToShare: Set = [HealthService.workoutType]

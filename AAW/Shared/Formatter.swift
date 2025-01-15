@@ -43,6 +43,12 @@ extension NumberFormatter {
         formatter.numberStyle = .percent
         return formatter
     }()
+    
+    static let ordinal: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .ordinal
+        return formatter
+    }()
 }
 
 extension Int {

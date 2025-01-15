@@ -6,9 +6,29 @@
 //
 
 import Foundation
+import SwiftData
 
-class StorageService {
-    let sharedDefaults = UserDefaults(suiteName: "group.com.tymh.AAW")
+protocol StorageServiceProtocol {
+    func saveStreaks(_ value: [Int: StreakObject])
+    func getStreaks() -> [Int: StreakObject]?
+    
+    func saveOrUpdateUserProgress(record: GlobalProgress?)
+    func fetchUserProgress(userId: String?) -> GlobalProgress?
+}
+
+class StorageService: StorageServiceProtocol {
+    private let context: ModelContext?
+    private let sharedDefaults = UserDefaults(suiteName: "group.com.tymh.AAW")
+    
+    init() {
+        do {
+            let config = ModelConfiguration(cloudKitDatabase: .none)
+            let container = try ModelContainer(for: GlobalProgress.self, configurations: config)
+            self.context = ModelContext(container)
+        } catch {
+            self.context = nil
+        }
+    }
     
     func saveStreaks(_ value: [Int: StreakObject]) {
         sharedDefaults?.set(object: value, forKey: "streaks")
@@ -17,6 +37,29 @@ class StorageService {
     
     func getStreaks() -> [Int: StreakObject]? {
         sharedDefaults?.object([Int: StreakObject].self, with: "streaks")
+    }
+    
+    func fetchUserProgress(userId: String?) -> GlobalProgress? {
+        let descriptor = FetchDescriptor<GlobalProgress>(
+            predicate: userId != nil ? #Predicate { $0.userId == userId! } : nil
+        )
+        return try? context?.fetch(descriptor).first
+    }
+    
+    func saveOrUpdateUserProgress(record: GlobalProgress?) {
+        guard let record else { return }
+        if let existingRecord = fetchUserProgress(userId: record.userId) {
+            existingRecord.value = record.value
+        } else {
+            let newUserProgress = record
+            context?.insert(newUserProgress)
+        }
+        
+        do {
+            try context?.save()
+        } catch {
+            print("Error saving user progress: \(error)")
+        }
     }
 }
 
