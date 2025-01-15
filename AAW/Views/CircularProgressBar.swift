@@ -10,6 +10,7 @@ import SwiftUI
 
 struct CircularProgressBar: View {
     var progress: CGFloat
+    var progressPercent: String?
     var strokeWidth: CGFloat = 20
     var lineColor: Color = .workoutGreen
     var backgroundColor: Color = .gray
@@ -41,11 +42,17 @@ struct CircularProgressBar: View {
                 .foregroundColor(lineColor)
                 .rotationEffect(Angle(degrees: 270.0))
                 .animation(.easeInOut(duration: 0.5), value: progress)
+            progressPercent.map {
+                Text($0)
+                    .font(.headline)
+                    .foregroundStyle(.workoutGreen)
+                    .frame(maxWidth: .infinity)
+            }
         }
     }
 }
 
 #Preview {
-    CircularProgressBar(progress: 0.4, strokeWidth: 40)
+    CircularProgressBar(progress: 0.4, progressPercent: "10%", strokeWidth: 40)
         .padding(.horizontal, 50)
 }

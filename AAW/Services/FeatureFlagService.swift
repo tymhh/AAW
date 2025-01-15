@@ -7,29 +7,24 @@
 
 import CloudKit
 
-class FeatureFlagService {
+protocol FeatureFlagServiceProtocol {
+    func fetchFeatureFlags() async throws
+    func isFeatureEnabled(_ flag: FeatureFlag) -> Bool
+}
+
+class FeatureFlagService: FeatureFlagServiceProtocol {
     private var flags: [FeatureFlag: Bool] = [:]
-    private let database = CKContainer.default().publicCloudDatabase
+    private let cloudKitService: CloudKitService
     
-    init() {
+    init(cloudKitService: CloudKitService) {
+        self.cloudKitService = cloudKitService
         Task {
             try await fetchFeatureFlags()
         }
     }
     
     func fetchFeatureFlags() async throws {
-        let query = CKQuery(recordType: "FeatureFlag", predicate: NSPredicate(value: true))
-        let result = try await database.records(matching: query)
-        
-        let records = result.matchResults.compactMap { matchResult in
-            switch matchResult.1 {
-            case .success(let record):
-                return record
-            case .failure(let error):
-                print("Error fetching record: \(error)")
-                return nil
-            }
-        }
+        let records = try await cloudKitService.fetchFeatureFlags()
         
         self.flags = records.reduce(into: [:]) { result, record in
             guard let flag = FeatureFlagObject(record: record) else { return }

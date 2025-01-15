@@ -21,7 +21,7 @@ struct ListView: View {
                     ProgressSection(appCoordinator: appCoordinator, viewModel: viewModel)
                     ActionButtonsSection(appCoordinator: appCoordinator, viewModel: viewModel)
                     WorkoutListSection(appCoordinator: appCoordinator, viewModel: viewModel)
-                }
+                }.safeAreaPadding(.top, 10)
             }
             .listSectionSpacing(20)
             .navigationTitle("Workouts")
@@ -77,26 +77,51 @@ struct ProgressSection: View {
     @ObservedObject var viewModel: WorkoutViewModel
     
     var body: some View {
-        Section() {
+        Section {
             Button(action: {
                 appCoordinator.navigate(to: .story(progress: viewModel.progress))
             }) {
-                HStack() {
-                    Spacer()
-                    Text(viewModel.progressString)
-                        .font(.headline)
-                        .foregroundStyle(.workoutGreen)
-                        .frame(maxWidth: .infinity)
-                    CircularProgressBar(progress: viewModel.progress)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                    Text(viewModel.progressPercent)
-                        .font(.headline)
-                        .foregroundStyle(.workoutGreen)
-                        .frame(maxWidth: .infinity)
-                    Spacer()
+                HStack(spacing: 20) {
+                    VStack(alignment: .leading) {
+                        Text(viewModel.progressString)
+                            .font(.title)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.workoutGreen)
+                        Text("challange \nprogress")
+                            .multilineTextAlignment(.leading)
+                            .font(.caption)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                    CircularProgressBar(progress: viewModel.progress,
+                                        progressPercent: viewModel.progressPercent)
+                    rankingView()
                 }
             }
+        }.frame(height: 120)
+    }
+    
+    @ViewBuilder
+    private func rankingView() -> some View {
+        if let userRanking = viewModel.userRanking {
+            VStack(alignment: .trailing) {
+                Text("\(NSDecimalNumber(string: "\(userRanking)"), formatter: NumberFormatter.ordinal)")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.workoutGreen)
+                Text("among \nAAW users")
+                    .multilineTextAlignment(.trailing)
+                    .font(.caption)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+            }
+        } else {
+            Button(action: appCoordinator.goToSystemSetting) {
+                Text("To participate in the global ranking please ensure you’re logged in to iCloud")
+                    .font(Font.system(size: 12))
+                    .multilineTextAlignment(.trailing)
+                    .frame(maxWidth: .infinity)
+                    .padding(.leading, -4)
+                    .padding(.trailing, -8)
+            }.buttonStyle(.plain)
         }
     }
 }

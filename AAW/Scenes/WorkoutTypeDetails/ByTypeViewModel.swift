@@ -24,16 +24,16 @@ class ByTypeViewModel: NSObject, ObservableObject {
     @Published var longestStreak: Int
     @Published var info: [String: String]?
     @Published var activeWCSession: Bool = false
-    private let geminiService: GeminiService
-    private let healthService: HealthService
+    private let geminiService: GeminiServiceProtocol
+    private let healthService: HealthServiceProtocol
     internal let sessionService: SessionService
-    internal let featureFlagService: FeatureFlagService
+    internal let featureFlagService: FeatureFlagServiceProtocol
     internal let type: WorkoutType
     
     init(type: WorkoutType,
-         geminiService: GeminiService = DIContainer.shared.geminiService,
-         healthService: HealthService = DIContainer.shared.healthService,
-         featureFlagService: FeatureFlagService = DIContainer.shared.featureFlagService,
+         geminiService: GeminiServiceProtocol = DIContainer.shared.geminiService,
+         healthService: HealthServiceProtocol = DIContainer.shared.healthService,
+         featureFlagService: FeatureFlagServiceProtocol = DIContainer.shared.featureFlagService,
          sessionService: SessionService = DIContainer.shared.sessionService) {
         self.geminiService = geminiService
         self.healthService = healthService
