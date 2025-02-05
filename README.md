@@ -2,6 +2,10 @@
 
 An intuitive iOS app designed to track your workouts, monitor progress, and set fitness goals. The app integrates seamlessly with the Apple Watch and provides widgets for quick insights into your fitness journey.
 
+<a href="https://apps.apple.com/us/app/aaw-achieve-all-workouts/id6739469172">
+  <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="200">
+</a>
+
 ---
 <p>
   <img src="preview.png" alt="Home Screen" width="300">
